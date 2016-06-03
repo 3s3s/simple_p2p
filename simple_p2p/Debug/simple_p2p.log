@@ -1,0 +1,77 @@
+﻿Build started 03.06.2016 14:11:31.
+     1>Project "C:\Users\Papa\YandexDisk\simple_server-0.16\simple_p2p\simple_p2p.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CRT_SECURE_NO_WARNINGS /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt epoll.cpp sendfile.cpp serv.cpp
+         serv.cpp
+     1>c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\server.h(403): warning C4244: 'argument' : conversion from 'const int' to 'u_short', possible loss of data
+                 c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\server.h(390) : while compiling class template member function 'void server::CServer<server::Cp2pClient,server::CServerMessages<CLIENT>>::ContinueP2P(const int)'
+                 with
+                 [
+                     CLIENT=server::Cp2pClient
+                 ]
+                 c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\server.h(357) : see reference to function template instantiation 'void server::CServer<server::Cp2pClient,server::CServerMessages<CLIENT>>::ContinueP2P(const int)' being compiled
+                 with
+                 [
+                     CLIENT=server::Cp2pClient
+                 ]
+                 c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\serv.cpp(5) : see reference to class template instantiation 'server::CServer<server::Cp2pClient,server::CServerMessages<CLIENT>>' being compiled
+                 with
+                 [
+                     CLIENT=server::Cp2pClient
+                 ]
+     1>c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\server.h(248): warning C4100: 'err' : unreferenced formal parameter
+                 c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\server.h(248) : while compiling class template member function 'int server::CServer<server::Cp2pClient,server::CServerMessages<CLIENT>>::CClient::GetLastError(int) const'
+                 with
+                 [
+                     CLIENT=server::Cp2pClient
+                 ]
+                 c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\server.h(258) : see reference to function template instantiation 'int server::CServer<server::Cp2pClient,server::CServerMessages<CLIENT>>::CClient::GetLastError(int) const' being compiled
+                 with
+                 [
+                     CLIENT=server::Cp2pClient
+                 ]
+                 c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\server.h(414) : see reference to class template instantiation 'server::CServer<server::Cp2pClient,server::CServerMessages<CLIENT>>::CClient' being compiled
+                 with
+                 [
+                     CLIENT=server::Cp2pClient
+                 ]
+                 c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\server.h(390) : while compiling class template member function 'void server::CServer<server::Cp2pClient,server::CServerMessages<CLIENT>>::ContinueP2P(const int)'
+                 with
+                 [
+                     CLIENT=server::Cp2pClient
+                 ]
+                 c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\server.h(357) : see reference to function template instantiation 'void server::CServer<server::Cp2pClient,server::CServerMessages<CLIENT>>::ContinueP2P(const int)' being compiled
+                 with
+                 [
+                     CLIENT=server::Cp2pClient
+                 ]
+     1>c:\program files\microsoft visual studio 12.0\vc\include\xutility(2503): warning C4996: 'std::_Move': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files\microsoft visual studio 12.0\vc\include\xutility(2488) : see declaration of 'std::_Move'
+                 c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\http_server.h(89) : see reference to function template instantiation '_OutIt std::move<const _Elem*,unsigned char*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=unsigned char *
+         ,            _Elem=char
+         ,            _InIt=const char *
+                 ]
+                 c:\program files\microsoft visual studio 12.0\vc\include\xutility(2488) : see declaration of 'std::_Move'
+                 c:\program files\microsoft visual studio 12.0\vc\include\xutility(2488) : see declaration of 'std::_Move'
+         sendfile.cpp
+     1>c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\sendfile.cpp(33): warning C4245: 'return' : conversion from 'int' to 'unsigned __int64', signed/unsigned mismatch
+     1>c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\sendfile.cpp(40): warning C4245: 'return' : conversion from 'int' to 'unsigned __int64', signed/unsigned mismatch
+     1>c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\sendfile.cpp(51): warning C4245: 'return' : conversion from 'int' to 'unsigned __int64', signed/unsigned mismatch
+         epoll.cpp
+     1>c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\epoll.cpp(63): warning C4389: '==' : signed/unsigned mismatch
+     1>c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\epoll.cpp(64): warning C4389: '==' : signed/unsigned mismatch
+     1>c:\users\papa\yandexdisk\simple_server-0.16\simple_p2p\epoll.cpp(65): warning C4389: '==' : signed/unsigned mismatch
+         Generating Code...
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Papa\YandexDisk\simple_server-0.16\Debug\simple_p2p.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Papa\YandexDisk\simple_server-0.16\Debug\simple_p2p.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Papa\YandexDisk\simple_server-0.16\Debug\simple_p2p.lib" /MACHINE:X86 Debug\epoll.obj
+         Debug\sendfile.obj
+         Debug\serv.obj
+         simple_p2p.vcxproj -> C:\Users\Papa\YandexDisk\simple_server-0.16\Debug\simple_p2p.exe
+     1>Done Building Project "C:\Users\Papa\YandexDisk\simple_server-0.16\simple_p2p\simple_p2p.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.19
